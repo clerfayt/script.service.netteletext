@@ -1,10 +1,17 @@
-script.service.netteletext
-==========================
-Teletext is a simple Kodi addon to access teletext pages (via internet).
+Teletext
+========
+**Teletext** (script.service.netteletext) is a simple Kodi addon to access teletext pages (via internet).
 
-*Current version: 0.1.0*
+Current version
+---------------
+0.1.1
 
-[This addon reuses code by techdealer (https://github.com/techdealer/script.teletextopt commit 42061859f9c28d0ba8fe40f179509b86b3f29c4d).]
+Installation
+------------
+1. Download the code as a [ZIP](https://github.com/clerfayt/script.service.netteletext/archive/master.zip) file.
+2. Install the addon via this ZIP file within KODI (Addons - Install from repository - Install from ZIP file).
+
+*This addon reuses code by techdealer (techdealer/script.teletextopt@42061859f9c28d0ba8fe40f179509b86b3f29c4d).*
 
 
 Currently supported channels:

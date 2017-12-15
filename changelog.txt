@@ -1,2 +1,5 @@
+Version 0.1.1
+*Improved transition between pages by adding a background
+
 Version 0.1.0
 * Initial version (support for ORF, SRF1, RTP)

@@ -51,11 +51,15 @@ class TeletextWindow(xbmcgui.WindowDialog):
 
 	def initPage(self):
                 """Build the UI."""
-                self.background = xbmcgui.ControlImage(0,0,1280,720, getNotFoundImgPath())
+                # bgImage gets displayed when changing from one page to another
+                self.bgImage = xbmcgui.ControlImage(0,0,1280,720, getNotFoundImgPath())
+                self.bgImage.setImage(IMAGEFOLDER+"/background.jpg", useCache=False)
+                self.addControl(self.bgImage)
+                self.pageImage = xbmcgui.ControlImage(0,0,1280,720, getNotFoundImgPath())
 		if len(self.imageURLs) > 0:
-			self.background.setImage(self.imageURLs[self.subpage-1], useCache=False)
+			self.pageImage.setImage(self.imageURLs[self.subpage-1], useCache=False)
 
-		self.addControl(self.background)
+		self.addControl(self.pageImage)
 
                 dt = datetime.datetime.now().strftime("%d.%m.%Y %H:%M:%S")
 		if len(self.imageURLs) > 1:
@@ -170,12 +174,12 @@ class TeletextWindow(xbmcgui.WindowDialog):
 
 
 	def updatePage(self):
-		if self.background is None or self.imageURLs is None or self.pagelabel is None:
+		if self.pageImage is None or self.imageURLs is None or self.pagelabel is None:
 			return
 		if len(self.imageURLs) > 0:
-			self.background.setImage(self.imageURLs[self.subpage-1], useCache=False)
+			self.pageImage.setImage(self.imageURLs[self.subpage-1], useCache=False)
 		else:
-			self.background.setImage(getNotFoundImgPath())
+			self.pageImage.setImage(getNotFoundImgPath())
 
 		dt = datetime.datetime.now().strftime("%d.%m.%Y %H:%M:%S")
 		if len(self.imageURLs) > 1:
