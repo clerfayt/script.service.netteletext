@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.service.netteletext" name="Teletext" version="0.1.0" provider-name="clerfayt">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <language>en de pt</language>
+        <summary lang="en">Teletext</summary>
+        <summary lang="de">Teletext</summary>
+        <summary lang="pt">Teletexto</summary>
+        <description lang="en">Access teletext via internet.</description>
+        <description lang="de">Teletext über das Internet aufrufen.</description>
+        <description lang="pt">Teletexto pela internet.</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=209948</forum>
+        <email>clerfayt@gmx.at</email>
+        <website>kodi.tv/</website>
+        <source>http://github.com/clerfayt/script.service.netteletext</source>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.png</fanart>
+	</assets>
+    </extension>
+</addon>

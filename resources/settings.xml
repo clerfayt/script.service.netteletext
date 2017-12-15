@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <setting id="askForChannelAtStartup" type="bool" label="30004" default="false" />
+    <setting id="defaultChannel" type="enum" label="30005" lvalues="ORF|SRF1|RTP" default="0" />
+</settings>
