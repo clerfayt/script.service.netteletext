@@ -55,11 +55,11 @@ class TeletextWindow(xbmcgui.WindowDialog):
                 self.bgImage = xbmcgui.ControlImage(0,0,1280,720, getNotFoundImgPath())
                 self.bgImage.setImage(IMAGEFOLDER+"/background.jpg", useCache=False)
                 self.addControl(self.bgImage)
+
                 self.pageImage = xbmcgui.ControlImage(0,0,1280,720, getNotFoundImgPath())
+		self.addControl(self.pageImage)
 		if len(self.imageURLs) > 0:
 			self.pageImage.setImage(self.imageURLs[self.subpage-1], useCache=False)
-
-		self.addControl(self.pageImage)
 
                 dt = datetime.datetime.now().strftime("%d.%m.%Y %H:%M:%S")
 		if len(self.imageURLs) > 1:
